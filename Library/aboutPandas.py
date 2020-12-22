@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import openpyxl
 
 # Series => 1차원 배열로 데이터를 담는다. 값의 리스트를 넘겨주어 만들 수 있다.
 s1 = pd.Series([1, 3, 5, np.nan, 6, 8])
@@ -476,3 +477,42 @@ df11.to_excel('foo.xlsx', sheet_name='Sheet1')
 # Excel 파일의 데이터 프레임 읽기
 pd.read_excel('foo.xlsx', 'Sheet1', index_col=None, na_values=['NA'])
 
+## 엑셀 파일 읽기
+# xlsx 파일을 불러오려면 engine = 'openpyxl' 필수
+# xlsx 파일 읽기
+kospi_df = pd.read_excel('./Excel/KOSPI상장회사.xlsx', engine = 'openpyxl')
+
+# 업종이 통신 및 방송 장비 제조업인 데이터 가져오기
+industry = kospi_df[kospi_df['업종'] == '통신 및 방송 장비 제조업']
+# print(industry)
+
+# 업종이 통신 및 방송 장비 제조업이거나 음식점업인 데이터 가져오기
+industry_Food = kospi_df[(kospi_df['업종'] == '통신 및 방송 장비 제조업') | (kospi_df['업종'] == '음식점업')]
+print(industry_Food)
+
+# 종목코드 기준으로 오름차순
+kospi_df.sort_value(by = '종목코드', ascending = True)
+
+price_df = pd.read_excel('./Excel/KOSPI시가총액.xlsx', engine = 'openpyxl')
+
+# VLOOKUP 하기 (기준이 될 열이 필요)
+# set_index에 기준 열에 사용할 이름을 입력
+kospi_df.set_index('기업명', inplace = True)
+
+# 시가총액이라느 ㄴ열을 만들어 VLOOKUP 결과 저장
+kospi_df['시가총액'] = price_df['상장시가총액(원)']
+
+## 피벗 테이블
+item_df = pd.read_excel('./Excel/월별 보유 수량.xlsx', engine='openpyxl')
+
+# 피벗 테이블 만들기
+# 값 = 보유 수량, 행 = 지역, 열 = 제조사
+FirstPivot = pd.pivot_table(item_df, values='보유 수량', index='지역', columns='제조사', aggfunc=sum)
+# print(FirstPivot)
+
+# 행을 두 가지 항목으로 지정하고 싶을 때
+SecondPivot = pd.pivot_table(item_df, values='보유 수량', index=['월', '지역'], columns='제조사', aggfunc=sum)
+print(SecondPivot)
+
+# sum 외
+# min = 최소값, max = 최대값, mean = 평균값, count = 개수
