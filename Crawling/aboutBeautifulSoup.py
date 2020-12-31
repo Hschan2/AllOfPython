@@ -54,3 +54,22 @@ i = 1
 for item in data:
     print(str(i)+"위: "+item.get_text())
     i += 1
+
+## 네이버 뉴스 10개 가져오기
+# 검색하고자 하는 단어를 입력
+# input으로 설정 가능
+search = '코로나'
+url_format = 'https://search.naver.com/search.naver?where=news&sm=tab_jum&query=' + search
+
+r = requests.get(url_format)
+
+sp = BeautifulSoup(r.text, 'html.parser')
+
+sources = sp.select('div.group_news > ul.list_news > li div.news_area > a')
+
+i = 0
+for source in sources:
+    i += 1
+    print(str(i) + '.', source.attrs['title'])
+# for source in sources:
+#     print(source.attrs['title'])
