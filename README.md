@@ -62,4 +62,14 @@ BeautifulSoup 라이브러리를 활용하기
 
 aboutMatplotlib
 Matplotlib 라이브러리를 활용하여 다양한 형태의 차트 및 그래프 만들기
+
+aboutSelenuim
+네이버 맞춤법 검사기를 이용하여 메모장에 있는 내용 검사하기
+```
+---
+
+- <b>Package</b>
+```
+Seaborn
+데이터 시각화하여 그래프로 그리기
 ```
