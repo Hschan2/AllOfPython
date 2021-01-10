@@ -39,6 +39,12 @@ Openpyxl 라이브러리 학습하기
 aboutPandas
 Pandas 라이브러리 학습하기
 Csv, Excel 파일로 데이터 입/출력 하기
+
+aboutBokeh
+numpy로 만든 데이터 시각화 하기 (시각화 그래프)
+
+aboutPymysql
+Python과 Mysql 연결하기
 ```
 ---
 
