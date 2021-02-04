@@ -10,12 +10,52 @@ Python 알고리즘 배우기 전 Python 기초 지식 및 문법 배우기
 
 PythonAlgorithm
 Python을 위한 알고리즘 학습하기
+
+MDP
+Markov Decision Process (마코프 의사 결정)
+
+NaturalLanguageProcessing
+자연어 처리(분석) 기초
+
+
+RecommendSystem
+추천 시스템 알고리즘
+
+NaverMovieReviewSentimentAnalysis
+RecommendSystemExample_1
+RecommendSystemExample_2
+추천 시스템 알고리즘 예제
+
+Percentage
+기초 확률 이론
+
+SensitivityAnalysis
+감성(감정) 분석 기초
+
+Statistics
+Python 통계학, Numpy로 알아보는 기초 통계
+
+UnsupervisedLearning
+비지도 학습 알고리즘
+
+UnsupervisedExample
+비지도 학습 알고리즘 예제
 ```
 ---
 
 - <b>OpenCV</b>
 ```
+openCV
+openCV란?
 
+PatternRecognition
+패턴 인식
+
+TextRecognition
+MNIST 데이터셋으로 손 글씨 숫자 인식
+
+ImagePretreatment
+이미지 데이터 전처리
 ```
 ---
 
@@ -74,6 +114,9 @@ Matplotlib 라이브러리를 활용하여 다양한 형태의 차트 및 그래
 
 aboutSelenuim
 네이버 맞춤법 검사기를 이용하여 메모장에 있는 내용 검사하기
+
+aboutRestfulAPI
+Python으로 RestfulAPI 설정하기 (Flask)
 ```
 ---
 
