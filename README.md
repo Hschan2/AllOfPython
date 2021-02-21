@@ -88,6 +88,9 @@ Python과 Mysql 연결하기
 
 aboutEDA
 sweetviz로 데이터 시각화 하기
+
+JSON
+파이썬에서 JSON 선언과 출력
 ```
 ---
 
