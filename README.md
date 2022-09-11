@@ -1,6 +1,36 @@
 # AllOfPython
+파이썬의 기초부터 기본까지 학습합니다. 파이썬에서 사용하는 기본 문법을 익힙니다.   
 
-## Python Algorithm [Link](https://github.com/Hschan2/AllOfPython/tree/master/PythonAlgorithm)
+AI 머신러닝을 위한 다양한 라이브러리를 활용해봅니다. 자동화, 이미지 고품질로 향상 등 다양한 경험을 학습합니다.   
+
+<br/>
+
+## 파이썬 기초부터 기본까지
+|타이틀|폴더로 이동|
+|---|:---:|
+|**Jupyter로 파이썬 기본 학습**|[이동](https://github.com/Hschan2/AllOfPython/tree/master/Jupyter/notebook)|
+|**파이썬 기본 학습 엑셀 파일**|[이동](https://github.com/Hschan2/AllOfPython/tree/master/Excel)|
+
+<br/>
+
+## 파이썬 실습
+|타이틀|폴더로 이동|
+|---|:---:|
+|**라이브러리 활용**|[이동](https://github.com/Hschan2/AllOfPython/tree/master/Library)|
+|**웹 크롤링**|[이동](https://github.com/Hschan2/AllOfPython/tree/master/Crawling)|
+|**OpenCV**|[이동](https://github.com/Hschan2/AllOfPython/tree/master/OpenCV)|
+|**패키지**|[이동](https://github.com/Hschan2/AllOfPython/tree/master/Package)|
+
+<br/>
+
+## 파이썬 알고리즘
+|타이틀|폴더로 이동|
+|---|:---:|
+|**알고리즘**|[이동](https://github.com/Hschan2/AllOfPython/tree/master/PythonAlgorithm)|
+
+<br/>
+
+<!-- ## Python Algorithm [Link](https://github.com/Hschan2/AllOfPython/tree/master/PythonAlgorithm)
 * Python 기초 지식과 문법
 * Python을 위한 알고리즘
 * Markov Decision Process (마코프 의사 결정)
@@ -48,4 +78,4 @@
 * Python 기초 문법 with Jupyter   
 
 ### Excel [Link](https://github.com/Hschan2/AllOfPython/tree/master/Excel)
-* 학습에 활용한 Excel 파일   
+* 학습에 활용한 Excel 파일    -->
